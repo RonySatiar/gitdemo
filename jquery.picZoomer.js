@@ -49,8 +49,8 @@
 
 	};
 	$.fn.picZoomer.defaults = {
-		picWidth: 320,
-		picHeight: 320,
+		picWidth: 500,
+		picHeight: 500,
 		scale: 2.5,
 		zoomerPosition: {top: '0', left: '350px'}
 		/*,
