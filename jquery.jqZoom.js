@@ -38,7 +38,7 @@
     var _initZoom = function(target, sWidth, sHeight){
         var $zoom = $("<div />").addClass("zoom-selector").width(sWidth).height(sHeight);
         target.after($zoom);
-        target.closest(".zoom-box").on({
+        target.closest(".theme-product-full-image picture").on({
             mousemove: function(e){
                 var mouseX=e.pageX-$(this).offset().left;
                 var mouseY=e.pageY-$(this).offset().top;
@@ -89,7 +89,7 @@
      */
     var _initViewer = function(target, imgUrl, vWidth, vHeight){
         var $viewer = $("<div />").addClass("viewer-box").width(vWidth).height(vHeight);
-        var $zoomBox = target.closest(".zoom-box");
+        var $zoomBox = target.closest(".theme-product-full-image picture");
         $viewer.css({
             left: target.width() + SPACING,
             top: 0
